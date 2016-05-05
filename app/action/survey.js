@@ -15,7 +15,7 @@ exports.commit = function(req, res, next){
             return res.json({bianhao: 0, status: "失败"});
         }
         console.log(result);
-        return res.json({bianhao: 1, status: "成功"});
+        return res.json({bianhao: result.insertId, status: "成功"});
     });
 };
 
