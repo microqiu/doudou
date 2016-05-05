@@ -3,10 +3,10 @@
  */
 var config = {
     mysql: {
-        host     : 'mysql',
-        user     : 'root',
-        password : '123456',
-        database : 'doudou'
+        host     : process.env.DBHOST,
+        user     : process.env.DBUSER,
+        password : process.env.DBPASSWORD,
+        database : process.env.DBNAME 
     }
 };
 
