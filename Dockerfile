@@ -6,4 +6,4 @@ WORKDIR app
 RUN npm install
 RUN apk add --no-cache curl
 EXPOSE 3000
-CMD ['bin/www']
+CMD node bin/www
