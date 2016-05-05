@@ -5,5 +5,6 @@ COPY app app
 WORKDIR app
 RUN npm install
 RUN npm install pm2 -g
+COPY run.sh run.sh
 EXPOSE 3000
-CMD pm2 start index.js
+CMD ['run.sh']
